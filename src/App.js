@@ -22,6 +22,7 @@ class App extends React.Component {
     const filtredMonsters = monsters.filter(monster=> monster.name.toLowerCase().includes(searchField.toLocaleLowerCase()))
     return (
       <div className="App">
+      <h1 className="app-name">MONSTERS ROLODEX</h1>
         <SearchBox
           placeholder="Search monster"
           handelChange={this.handelChange}
